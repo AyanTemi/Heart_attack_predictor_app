@@ -5,7 +5,7 @@ import pickle
 
  
 #loading our model
-model = pickle.load(open('C:/Users/USER/Heart_attack_predictor/log_model.pkl','rb'))
+model = pickle.load(open('log_model.pkl','rb'))
 
 
 
