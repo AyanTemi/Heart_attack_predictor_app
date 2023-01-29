@@ -77,7 +77,7 @@ def main():
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
         output = prediction(Age, Sex, Exang, CAA, CP, FBS, RESTECG, THALACH, SLP, THALL)
-        st.success(f'You have {output} of heart attack')
+        st.success(f'You have a {output} of heart attack')
 
 if __name__=='__main__': 
     main()
