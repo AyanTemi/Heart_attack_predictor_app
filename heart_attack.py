@@ -57,9 +57,9 @@ def main():
     # front end 
     st.markdown("<h1 style='text-align: center; color: White;background-color:Blue'>Heart Attack Predictor</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: side; color: Black;'>About this App.</h2>", unsafe_allow_html=True)
-    st.markdown("### This is a Web app that helps the user especially medical personnels to determine whether a patient is at risk of heart attack.")
-    st.markdown("### What tools where used to make this?")
-    st.markdown("#### The Model was made using a dataset from Kaggle and a Kaggle notebooks was used to train the model. I made use of Sci-Kit learn in order to make the Logistic Linear Regression Model.")
+    st.markdown("#### This is a web app that helps the user, especially medical personnel, determine whether a patient is at risk of a heart attack.")
+    st.markdown("## Tools Used?")
+    st.markdown("#### The model was made using a dataset from Kaggle, and Kaggle notebooks were used to train the model. I made use of Sci-Kit Learn in order to make the logistic linear regression model.")
       
     # following lines create boxes in which user can enter data required to make prediction 
     Sex = st.selectbox('Sex',("Male","Female"))
