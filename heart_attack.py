@@ -38,7 +38,7 @@ def prediction(Age, Sex, Exang, CAA, CP, FBS, RESTECG, THALACH, SLP, THALL):
 
     if RESTECG == "normal":
         RESTECG = 0
-    elif  RESECT_ECG == "abnormal":
+    elif  RESTECG == "abnormal":
         RESTECG = 1
     else:
         RESTECG = 2
