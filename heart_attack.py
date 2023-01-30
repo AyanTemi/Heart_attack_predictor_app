@@ -1,10 +1,11 @@
+#import packages
 import streamlit as st
 import pandas as pd
 import pickle
 
 
  
-#loading our model
+#loading the model
 model = pickle.load(open('log_model.pkl','rb'))
 
 
@@ -52,7 +53,7 @@ def prediction(Age, Sex, Exang, CAA, CP, FBS, RESTECG, THALACH, SLP, THALL):
         pred = 'High Risk'
     return pred
 
-
+#main
 def main():       
     # front end 
     st.markdown("<h1 style='text-align: center; color: White;background-color:Blue'>Heart Attack Predictor</h1>", unsafe_allow_html=True)
@@ -61,7 +62,7 @@ def main():
     st.markdown("## Tools Used?")
     st.markdown("#### The model was made using a dataset from Kaggle, and Kaggle notebooks were used to train the model. I made use of Sci-Kit Learn in order to make the logistic linear regression model.")
       
-    # following lines create boxes in which user can enter data required to make prediction 
+    # create boxes and sliders for users to enter data required to make prediction 
     Sex = st.selectbox('Sex',("Male","Female"))
     Age = st.number_input("Patient's Age") 
     Exang = st.selectbox('Exercise induced Anginal',("Yes","No"))
