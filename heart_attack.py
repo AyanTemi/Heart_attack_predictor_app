@@ -23,9 +23,9 @@ def prediction(Age, Sex, Exang, CAA, CP, FBS, RESTECG, THALACH, SLP, THALL):
     else:
         Exang = 1
  
-    if CP == "typical anginal":
+    if CP == "typical angina":
         CP = 1
-    elif CP == "atypical anginal":
+    elif CP == "atypical angina":
         CP = 2
     elif CP == "non-anginal pain":
         CP = 3
